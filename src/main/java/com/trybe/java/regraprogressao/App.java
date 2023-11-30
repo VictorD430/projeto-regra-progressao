@@ -17,12 +17,16 @@ public class App {
     quant = Integer.parseInt(scanner.nextLine());
     String nome;
     int peso = 0;
+    int nota = 0;
 
     for (int i = 1; i < quant; i += 1) {
       System.out.println("Digite o nome da atividade " + (i + 1) + ":");
       nome = scanner.nextLine();
       System.out.println("Digite o peso da atividade " + (i + 1) + ":");
       peso = Integer.parseInt(scanner.nextLine());
+      System.out.println("Digite a nota obtida para " + nome + ":");
+      nota = Integer.parseInt(scanner.nextLine());
     }
+    scanner.close();
   }
 }
